@@ -16,6 +16,7 @@ jobs:
 
       - name: Build and Test
         run: mvn clean test jacoco:report
+        working-directory: week7_CalKubnet_sep1
 
       - name: Upload coverage
         uses: actions/upload-artifact@v4
